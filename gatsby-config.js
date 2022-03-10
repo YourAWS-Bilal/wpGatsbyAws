@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
       title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://main.d8art7yn896ol.amplifyapp.com/`
   },
   plugins: [{
     resolve: 'gatsby-source-wordpress',
