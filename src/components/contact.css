@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main
+{
+    height: 700px;
+    background-image: url("../images/image.jpg");
+    background-position: center;
+}
+h1{
+    font-family:sans-serif;
+}
+.container{
+    padding-top: 100px;
+}
+.card{
+    border-radius: 20px;
+    background-color: rgb(237, 234, 248);
+}
+.form-label a{
+    margin-left: 50px;
+}
+.Card{
+    background-color: #173348;
+    
+}
+.Card .card-body p {
+    line-height: 10px;
+}
+footer{
+    background-color: #173348;
+}
