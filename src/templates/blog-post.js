@@ -9,17 +9,19 @@ function BlogPost({ data }) {
     "data from template page : ",
     // data.wpPost.featuredImage.node.sourceUrl
   )
-  // let image = data.wpPost.featuredImage.node.sourceUrl
+  let image = data.wpPost.featuredImage.node.sourceUrl
   let content = data.wpPost.content
   // let author = data.wpPost.author.node.name
   let title = data.wpPost.author.node.title
+   //for removing <p> and </p> 
+   var replaceChars={ "<p>":"" , "</p>":" " };
   return (
     <div>
       <NavBar />
       <div className="home-content">
         <Card className="card-scroll-content " variant="outlined">
         {/* <CardScroll title={title} src={image} content={content} /> */}
-          <CardScroll title={title} content={content} />
+          <CardScroll title={title} src={image} content={content.replace(/<p>|<\/p>/g,function(match) {return replaceChars[match];})}  />
         </Card>
       </div>
     </div>

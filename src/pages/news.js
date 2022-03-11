@@ -27,11 +27,11 @@ function News({ data }) {
               <Link to={`/news/${val.node.slug}`}>
                 <Card className="news-posts">
                   <div className="news-img-left">
-                    {/* <img
+                    <img
                       style={{ width: "100%" }}
                       src={val.node.featuredImage.node.sourceUrl}
                       alt=""
-                    ></img> */}
+                    ></img>
                   </div>
                   <div className="news-right">
                     <h1>{val.node.title}</h1>
