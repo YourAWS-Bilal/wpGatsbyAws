@@ -21,7 +21,8 @@ function BlogPost({ data }) {
       <div className="home-content">
         <Card className="card-scroll-content " variant="outlined">
         {/* <CardScroll title={title} src={image} content={content} /> */}
-          <CardScroll title={title} src={image} content={content.replace(/<p>|<\/p>/g,function(match) {return replaceChars[match];})}  />
+          {/* <CardScroll title={title} src={image} content={content.replace(/<p>|<\/p>/g,function(match) {return replaceChars[match];})}  /> */}
+          <CardScroll title={title} src={image} content={content} />
         </Card>
       </div>
     </div>

@@ -79,7 +79,7 @@ export default function CardScroll(props) {
             <img style={{ width: "100%" }} src={props.src} alt=""></img>
           </div>
 
-          <h2>{props.content}</h2>
+          <h2 dangerouslySetInnerHTML={{ __html: props.content }} />
         </Box>
       </Container>
       <ScrollTop {...props}>
