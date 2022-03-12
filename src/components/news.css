@@ -1,7 +1,3 @@
-
-body {
-  background-color: #173348;
-}
 .card-scroll-content {
   width: 70%;
   margin: 0 auto;
@@ -9,23 +5,6 @@ body {
   border-radius: 4px 4px 4px 4px !important;
   min-width: 350px;
 }
-
-p {
-  font-size: 20px;
-  font-family: sans-serif;
-}
-
-.news-content {
-  height: 100vh;
-  background-image: url("https://stadkoll.se/img/home.6c615e45.jpg");
-  background-size: cover;
-  background-position: top left !important;
-  padding-top: 2rem !important;
-  padding: 3rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .news-posts {
   display: flex;
   justify-content: space-between;

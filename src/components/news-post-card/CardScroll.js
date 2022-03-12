@@ -60,33 +60,33 @@ export default function CardScroll(props) {
     <div style={{ overflow: "scroll" }}>
       <CssBaseline />
 
-      <Toolbar id="back-to-top-anchor" />
-      <Container>
-        <Box
-          sx={{ my: 2 }}
-          style={{
-            paddingLeft: "1rem",
-            paddingRight: "1rem",
-            backgroundColor: "#E5E7EB",
-          }}
-        >
-          <h1 style={{ textAlign: "center" }}>
-            {props.title}
-            {/* {props.title} */}
-          </h1>
-          <div style={{ marginTop: ".7rem", marginBottom: ".7rem" }}>
-            {" "}
-            <img style={{ width: "100%" }} src={props.src} alt=""></img>
-          </div>
+<Toolbar id="back-to-top-anchor" />
+<Container>
+  <Box
+    sx={{ my: 2 }}
+    style={{
+      paddingLeft: "1rem",
+      paddingRight: "1rem",
+      backgroundColor: "#E5E7EB",
+    }}
+  >
+    <h1 style={{ textAlign: "center" }}>
+      {props.title}
+      {/* {props.title} */}
+    </h1>
+    <div style={{ marginTop: ".7rem", marginBottom: ".7rem" }}>
+      {" "}
+      <img style={{ width: "100%" }} src={props.src} alt=""></img>
+    </div>
 
-          <h2 dangerouslySetInnerHTML={{ __html: props.content }} />
-        </Box>
-      </Container>
-      <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
+    <h2 dangerouslySetInnerHTML={{ __html: props.content }} />
+  </Box>
+</Container>
+<ScrollTop {...props}>
+  <Fab color="secondary" size="small" aria-label="scroll back to top">
+    <KeyboardArrowUpIcon />
+  </Fab>
+</ScrollTop>
     </div>
   )
 }

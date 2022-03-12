@@ -1,26 +1,25 @@
-import { Card } from "@mui/material"
 import React from "react"
 // import NavBar from "../components/global-components/navbar/index";
 import { graphql, Link } from "gatsby"
+import { Card } from "@mui/material"
+import Layout from '../components/layout'
 import "../components/news.css"
-import { NavBar } from "../components"
 function News({ data }) {
   console.log("data >>", data)
   return (
-    <div className="news">
-      <NavBar />
-      <div className="news-content">
+    <Layout>
+      <div className="container jumbotron">
         {/* <Card className="card-scroll-content " variant="outlined">
           <BackToTop />
         </Card> */}
         <Card className="card-scroll-content ">
-          <h1>Aktuella artiklar om hemstäd</h1>
-          <h3 style={{ width: "80%", margin: "0 auto", marginBottom: "2rem" }}>
+          <h1 className="display-4">Aktuella artiklar om hemstäd</h1>
+          <p className="lead">
             Här hittar du aktuella artiklar för dig som är intresserad av att
             förstå städbranschen. Läs det senaste som påverkar dig som konsument
             och privatperson och få bra tips som gör det enklare att komma
             igång.
-          </h3>
+          </p>
           {data.allWpPost.edges.map(val => {
             console.log(val)
             return (
@@ -46,10 +45,9 @@ function News({ data }) {
           })}
         </Card>
       </div>
-    </div>
+    </Layout>
   )
 }
-
 export default News
 export const query = graphql`
   query {

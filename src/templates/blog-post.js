@@ -3,12 +3,8 @@ import { graphql } from "gatsby"
 import CardScroll from "../components/news-post-card/CardScroll"
 import { Card } from "@mui/material"
 import "../components/homepage.css"
-import { NavBar } from "../components"
+import Layout from '../components/layout'
 function BlogPost({ data }) {
-  console.log(
-    "data from template page : ",
-    // data.wpPost.featuredImage.node.sourceUrl
-  )
   let image = data.wpPost.featuredImage.node.sourceUrl
   let content = data.wpPost.content
   // let author = data.wpPost.author.node.name
@@ -16,16 +12,16 @@ function BlogPost({ data }) {
    //for removing <p> and </p> 
    var replaceChars={ "<p>":"" , "</p>":" " };
   return (
-    <div>
-      <NavBar />
-      <div className="home-content">
+      <Layout>
+        <div style={{height:800}}>
         <Card className="card-scroll-content " variant="outlined">
         {/* <CardScroll title={title} src={image} content={content} /> */}
           {/* <CardScroll title={title} src={image} content={content.replace(/<p>|<\/p>/g,function(match) {return replaceChars[match];})}  /> */}
           <CardScroll title={title} src={image} content={content} />
         </Card>
       </div>
-    </div>
+      </Layout>
+    
   )
 }
 

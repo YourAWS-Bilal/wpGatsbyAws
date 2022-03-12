@@ -31,33 +31,23 @@
 //     },
 //   ],
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = {
   siteMetadata: {
       title: ``,
     siteUrl: `https://main.d8art7yn896ol.amplifyapp.com/`
   },
-  plugins: [{
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-remove-generator',
+      options: {
+        // Only remove the Gatsby version number instead of the whole `meta` tag
+        removeVersionOnly: true,
+        // Customise the generator content string.
+        // Note: This has the highest precedence of the available options.
+        content: 'Custom string'
+      }
+    },
+    {
     resolve: 'gatsby-source-wordpress',
     options: {
       "url": "http://52.20.166.248/graphql"

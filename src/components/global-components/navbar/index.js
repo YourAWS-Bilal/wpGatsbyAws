@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React,{useEffect,useState} from "react"
 import "./index.css"
 import logo from "../../images/logo.png"
 import { Link } from "gatsby"
 
-export const NavBar = () => {
+export default function Navbar() {
   const [show, handleShow] = useState(false)
-
   const [forScrollFixed, setScrollFixed] = useState(false)
-
   const transitionNavbar = () => {
     if (window.scrollY > 50) {
       setScrollFixed(true)
@@ -75,3 +73,4 @@ export const NavBar = () => {
     </div>
   )
 }
+

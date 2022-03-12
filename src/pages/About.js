@@ -1,9 +1,9 @@
 import React from 'react';
-import {NavBar} from '../components/global-components/navbar/index'
+import Layout from '../components/layout';
 export default function Contact(){
     return(
         <main style={{height:"1000px"}}>
-            <NavBar/>
+            <Layout>
             <div className="container">
                 <div className="card w-100 h-100">
                     <div className='row'>
@@ -46,9 +46,8 @@ export default function Contact(){
                     </div>
                 </div>
             </div>
-            <footer>
+            </Layout>
             
-            </footer>
         </main>
         
     )

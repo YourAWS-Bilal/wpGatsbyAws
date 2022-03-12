@@ -1,8 +1,6 @@
-
 .header {
   padding: 2rem;
   /* padding-top: 4rem; */
-
   background-color: #173348;
   color: #f8f9f9;
 }
@@ -19,7 +17,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  /* width: 98%; */
   margin: 0 auto;
   align-items: center;
 }
@@ -30,11 +28,12 @@
 .nav_menu {
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  /* width: 35%; */
 }
 
 .nav_links {
-  font-size: 25px;
+  padding: 10px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
 }

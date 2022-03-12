@@ -14,5 +14,5 @@ p {
   background-size: cover;
   background-position: top left !important;
   padding-top: 2rem !important;
-  height: 100vh;
+  /* height: 100vh; */
 }
