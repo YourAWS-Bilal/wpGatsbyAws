@@ -1,11 +1,10 @@
 import React from 'react';
 import '../components/contact.css'
-import {NavBar} from '../components/global-components/navbar/index'
 import Layout from '../components/layout';
 export default function Contact() {
   return (
       <Layout>
-         <div className="container">
+      <div className="container mt-5 main">
       <div class="card w-100 h-100 pb-5">
         <div className='m-5'>
           <div className='row'>

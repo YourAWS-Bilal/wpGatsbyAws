@@ -3,13 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
-main
+.main
 {
-    height: 700px;
-    background-image: url("../images/image.jpg");
+    height: 800px;
+    background-image: url("/src/images/image.jpg");
     background-position: center;
 }
 .card{
+    z-index: -100;
     border-radius: 20px;
     background-color: rgb(237, 234, 248);
 }
